@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public float Thrust_Speed = 1.0f;
     private float Turn_Direction;
     public float Turn_Speed = 1.0f;
+    public Bullet Bullet_Prefab;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +40,10 @@ public class Player : MonoBehaviour
             Turn_Direction = 0.0f;
         }
 
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        {
+            Shoot();
+        }
 
     }
 
@@ -54,5 +59,11 @@ public class Player : MonoBehaviour
             Rigidbody_.AddTorque(Turn_Direction * this.Turn_Speed);
         }
 
+    }
+
+    private void Shoot()
+    {
+        Bullet Bullet_ = Instantiate(this.Bullet_Prefab, this.transform.position, this.transform.rotation);
+        Bullet_.Project(this.transform.up);
     }
 }
