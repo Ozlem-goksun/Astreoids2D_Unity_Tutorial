@@ -10,7 +10,7 @@ public class Astreoids : MonoBehaviour
     public float Size = 1.0f;
     public float Min_Size = 0.5f;
     public float Max_Size = 1.5f;
-    public float Speed = 5.0f;
+    public float Speed = 1.0f;
     public float Max_LifeSpan = 30.0f;
 
     private void Awake()
@@ -62,6 +62,6 @@ public class Astreoids : MonoBehaviour
 
         Astreoids half = Instantiate(this, position, this.transform.rotation);
         half.Size = this.Size * 0.5f;
-        half.SetTrajectory(Random.insideUnitCircle.normalized);
+        half.SetTrajectory(Random.insideUnitCircle.normalized * this.Speed);
     }
 }
