@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8214692636373824897}
   - component: {fileID: 7016313621053723908}
   - component: {fileID: -484403018714131896}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Astreoid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,3 +179,5 @@ MonoBehaviour:
   Size: 1
   Min_Size: 0.5
   Max_Size: 1.5
+  Speed: 0.2
+  Max_LifeSpan: 30
