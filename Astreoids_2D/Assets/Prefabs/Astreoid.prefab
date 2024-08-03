@@ -171,7 +171,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56751c568bece384393e98ca89084621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sprites: []
+  Sprites:
+  - {fileID: 21300000, guid: 3bb139eac51dd0d4fa3249601ac6ba7e, type: 3}
+  - {fileID: 21300000, guid: 9d6bbe748b883c240a42a23a31343d99, type: 3}
+  - {fileID: 21300000, guid: 34bc6e5f69375f447864dd016d6c1604, type: 3}
+  - {fileID: 21300000, guid: 382aa617c85814d4298490fa1e83342c, type: 3}
   Size: 1
   Min_Size: 0.5
   Max_Size: 1.5

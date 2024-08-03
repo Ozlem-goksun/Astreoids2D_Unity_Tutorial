@@ -244,7 +244,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5160d26be7863674a861614359db7b7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Astroid_Prefab: {fileID: -484403018714131896, guid: e808514ec479e0b41ac21d173118ca32, type: 3}
   Spawn_Rate: 2
+  Spawn_Amount: 1
+  Spawn_Distance: 15
+  trajectory_Variance: 15
 --- !u!4 &530183945
 Transform:
   m_ObjectHideFlags: 0
