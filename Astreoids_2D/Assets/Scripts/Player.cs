@@ -66,4 +66,18 @@ public class Player : MonoBehaviour
         Bullet Bullet_ = Instantiate(this.Bullet_Prefab, this.transform.position, this.transform.rotation);
         Bullet_.Project(this.transform.up);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Astreoid")
+        { 
+            Rigidbody_.velocity = Vector3.zero;
+            Rigidbody_.angularVelocity = 0.0f;
+
+            this.gameObject.SetActive(false);
+
+            
+        }
+    }
+
 }

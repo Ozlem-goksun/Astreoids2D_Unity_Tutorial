@@ -64,4 +64,7 @@ public class Astreoids : MonoBehaviour
         half.Size = this.Size * 0.5f;
         half.SetTrajectory(Random.insideUnitCircle.normalized * this.Speed);
     }
+
+
+
 }
