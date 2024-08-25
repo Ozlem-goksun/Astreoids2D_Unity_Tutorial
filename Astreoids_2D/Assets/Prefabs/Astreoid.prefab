@@ -144,7 +144,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 5
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -179,5 +179,5 @@ MonoBehaviour:
   Size: 1
   Min_Size: 0.5
   Max_Size: 1.5
-  Speed: 1
+  Speed: 0.5
   Max_LifeSpan: 30
